@@ -1,0 +1,28 @@
+logging:
+  level:
+    org.springframework.web: INFO
+    com.github.binarywang.demo.wx.mp: DEBUG
+    me.chanjar.weixin: DEBUG
+wx:
+  mp:
+    configs:
+#      - appId: wx6a184598251d71b9
+#        secret: c1863dcf622652de366ff928b06ee2b9
+#        token: moerlong
+#        aesKey: HP3j1EjiaK5tRbACoYILIFiBYRQ7xUYDYNfYakMQjCK
+      - appId: wxa64b9ed20f0e49c5
+        secret: a78e2ef6d68dc285ec6d6bd295b82536
+        token: moerlong
+        aesKey: HP3j1EjiaK5tRbACoYILIFiBYRQ7xUYDYNfYakMQjCK
+server:
+    port: 8080
+
+job:
+  wechat_access_token:
+    cron: 0 0 0/1 * * ?
+#
+#wechat:
+#  appId: wxa64b9ed20f0e49c5
+#  secret: a78e2ef6d68dc285ec6d6bd295b82536
+#  token: moerlong
+#  aesKey: HP3j1EjiaK5tRbACoYILIFiBYRQ7xUYDYNfYakMQjCK

@@ -17,7 +17,7 @@ public class WechatJob {
 //    String secret;
 //
 //    @Scheduled(cron = "${job.wechat_access_token.cron}")
-//    @Scheduled(cron = "cron = 0 0/1 * * * ? ")
+//    @Scheduled(cron = "cron = 0 0 0/1 * *")
     public void wechatAccessToken(){
 
         String appid = "wxa64b9ed20f0e49c5";
